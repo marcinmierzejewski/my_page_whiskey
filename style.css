@@ -1,0 +1,514 @@
+html {scroll-behavior: smooth}
+
+body {   
+    background-color: rgba(0, 0, 0, 0.8);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Eczar', serif    
+}
+
+
+#nawigacja {
+    position: absolute;
+    z-index: 10;
+    width: 80%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    /*padding-top: 30px;*/
+    color: goldenrod;
+    /*overflow: hidden;*/
+    background-color: rgba(0, 0, 0, 0);
+    border-bottom: 1px solid rgba(209, 154, 102, 0.8);
+    margin-left: 10%;
+    margin-right: 10%;
+    box-shadow: 3px 3px 3px 3px rgba(34, 33, 33, 0.678);
+    letter-spacing: 0.1em
+}
+
+
+
+#nawigacja li {float: left}
+
+
+#nawigacja li a {
+    display: block;        
+    /*font-family: 'Eczar', serif;*/
+    text-decoration: none;    
+    padding: 10px 30px;    
+    color: rgba(209, 154, 102, 0.7);
+    font-size: 18px;
+    line-height: 30px;
+    transition: 0.5s
+}
+
+
+
+#nawigacja li a:hover {
+    background-color: rgba(209, 154, 102, 0.8);
+    color:black;
+    transition: 0.3s    
+}
+
+
+#nawigacja li.right {float: right}
+
+#nawigacja li a.home {  
+    font-size: 20px;
+    border-left: 50px solid rgba(209, 154, 102, 1);
+    padding-left: 30px
+}
+
+@media only screen and (max-width: 800px) {
+    #nawigacja  {
+      margin: 0;
+      width: 100%;     
+    }
+  }
+
+.hasla {
+    /*font-family: 'Eczar', serif;*/
+    color: rgba(240, 248, 255, 0.5);
+    background-color: rgba(43, 42, 42, 0.7) ;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    padding-left: 8%;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-left: 2px solid rgba(209, 154, 102, 1);
+    box-shadow: 3px 3px 3px 3px rgba(34, 33, 33, 0.678)
+}
+
+
+div.hasla div.tytul {    
+    width: 400px;
+    border-right: 2px solid rgba(209, 154, 102, 1);
+    padding-right: 50px   
+}
+
+@media only screen and (max-width: 800px) {
+    div.hasla div.tytul  {
+      margin: 0;
+      width: 100%;
+      padding-right: 50px;    
+    }
+  }
+
+
+
+div.tytul p {
+    text-align: justify;
+    letter-spacing: 0.03em
+}
+
+div.tytul h2 {letter-spacing: 0.1em}
+
+div.glass {
+    display: block;
+    margin: auto; /* Obrazki ustawią się na środku z lewej i z prawej */    
+}
+
+div.glass ul {
+    display: flex;
+    flex-wrap: wrap;    
+    padding-left: 15px;
+    align-items: center;
+    justify-content: center
+}
+
+
+div.glass ul li{
+    list-style: none; 
+    margin-left: 30px;
+    float: left;    
+}
+
+
+
+
+div.glass img{
+    width: 100%;
+    object-fit: contain;    
+    opacity: 50%;    
+    padding: 0px;
+    box-sizing: border-box;
+    border-radius: 5px;    
+    box-shadow: -5px 5px 5px 5px rgba(22, 22, 22, 0.678);  
+    float: left;
+    margin-top: 30px; 
+    
+}
+
+
+p.linia{    
+    font-size: 12px;
+    color: rgba(209, 154, 102, 1);
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    opacity: 0.8;
+}
+ 
+p.linia:before{
+    color: rgba(209, 154, 102, 1);
+    content: "";    
+    display: inline-block;
+    vertical-align: middle;
+    height: 1px;
+    width: 60px;
+    margin-right: 20px;
+    vertical-align: middle;
+    background-color: rgba(209, 154, 102, 1);    
+}
+
+div.picture{
+    display: block;
+    margin-top: 30px;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-left: 2px solid rgba(209, 154, 102, 1);    
+    box-shadow: 3px 3px 3px 3px rgba(34, 33, 33, 0.678);
+    position: relative;
+}
+
+@media only screen and (max-width: 800px) {
+    div.picture {
+      display: block;  
+      float: left;
+      margin: 0;
+      width: 100%;
+      transition: 1s;    
+    }
+  }
+
+div.picture img{
+    object-fit: contain;
+    opacity: 0.6;
+    position: relative;
+}
+
+.podpis_picture{
+    position: absolute;
+    color: rgba(240, 248, 255, 0.5);
+    font-size: 1.5em;
+    text-align: center;
+    letter-spacing: .2em;
+    top: 10%;
+    left: 5%;
+    z-index: 5;
+    transition: 1s;
+}
+
+@media only screen and (max-width: 800px) {
+    .podpis_picture_tekst  {
+      display: none;    
+    }
+  }
+
+  @media only screen and (max-width: 800px) {
+   
+    .podpis_picture {
+        top: 50%;
+        transition: 1s;
+    }
+  }
+
+
+
+/* Sekcja z galeriami */
+
+
+div.galeria{
+    /*font-family: 'Eczar', serif;*/
+    color: rgba(240, 248, 255, 0.5);
+    background-color: rgba(43, 42, 42, 0.7) ;
+    display: block;
+    margin-top: 30px;    
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-left: 2px solid rgba(209, 154, 102, 1);
+    box-shadow: 3px 3px 3px 3px rgba(34, 33, 33, 0.678);  
+}
+
+
+
+div.galeria div.tytul{
+    margin-left: 10%;
+}
+
+div.galeria-lista{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+div.galeria-lista ul{
+    
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+div.galeria-lista ul li{
+    list-style-type: none;
+    margin: 40px;
+}
+
+
+div.galeria-lista ul li img{
+    width: 100%;
+    object-fit: contain;
+    opacity: 0.6;
+    box-shadow: -5px 5px 5px 5px rgba(22, 22, 22, 0.678);
+    box-sizing: border-box;
+    transition: 0.2s;
+    border-radius: 5px;
+}
+
+div.galeria-lista ul li img:hover{
+    opacity: 0.8;
+    transition: 0.3s;
+    transform: translate(-3px, 5px);
+    box-shadow: -2px 2px 2px 2px rgba(22, 22, 22, 0.678);
+    transition: 0.3s; 
+}
+
+div.galeria-lista ul li div h3{
+    text-align: center;
+    letter-spacing: 0.1em;
+}
+
+div.galeria-lista ul li div p{
+    text-align: center;
+    color: rgba(209, 154, 102, 1);
+    letter-spacing: 0.1em;
+}
+
+.benefits, .kontakt{
+    /*font-family: 'Eczar', serif;*/
+    color: rgba(240, 248, 255, 0.5);
+    background-color: rgba(43, 42, 42, 0.7) ;
+    display: block;
+    margin-top: 30px;
+    padding-left: 8%;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-left: 2px solid rgba(209, 154, 102, 1);
+    box-shadow: 3px 3px 3px 3px rgba(34, 33, 33, 0.678);
+    }
+
+.benefits-list ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.benefits-list ul li{
+    display: flex;
+    list-style-type: none;
+    border-radius: 25px;
+    background-color: transparent;
+    color: rgba(240, 248, 255, 0.5);
+    padding: 40px 40px;
+    margin: 30px;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    border-top: 4px solid rgba(209, 154, 102, 1);
+    border-bottom: 4px solid rgba(209, 154, 102, 1);
+    box-shadow: -5px 5px 5px 5px rgba(22, 22, 22, 0.678);
+    transition: 0.5s;    
+}
+
+.benefits-list ul li:hover{
+    color: rgba(240, 248, 255, 0.8);
+    transition: 0.3s;
+    transform: translate(-3px, 5px);
+    box-shadow: -2px 2px 2px 2px rgba(22, 22, 22, 0.678); 
+}
+
+.benefits-list ul li:first-child{
+    width: 200px;   
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+}
+
+.benefits-list ul li:nth-child(2) {width: 50%}
+
+.benefits-list ul li img{
+    position: absolute;
+    width: 25%;
+    top: 15px;
+    right: 20px;
+    opacity: 0.5;
+}
+
+.benefits-list ul li p {text-align: justify}
+
+.kontakt-form{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form{
+    margin-left: 50px;
+    margin-right: 30px;
+}
+
+.form .tytul, .adres .tytul {letter-spacing: .1em}
+
+.form input, .form textarea{
+    font-family: 'Eczar', serif;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(240, 248, 255, 0.192);
+    outline: none;
+    color: whitesmoke;    
+    letter-spacing: .2em;
+    font-size: .8em;
+    margin-top: 1.5em;
+    transition: 0.3s;
+    margin-right: 30px;       
+}
+
+.form input::placeholder, .form textarea::placeholder{
+    color: rgba(240, 248, 255, 0.192);
+    text-transform: uppercase;
+}
+
+.form input:hover, .form textarea:hover{
+    opacity: 1;
+    border-bottom: 1px solid rgba(209, 154, 102, 1);
+    transition: 0.3s;
+}
+
+.form textarea{
+    width: 100%;
+    resize: none;
+    margin-right: 30px;      
+}
+
+.form button, .back, .button{
+    margin: 20px;
+    padding: 10px 40px;
+    border-radius: 10px;
+    background-color: transparent;
+    color: rgba(240, 248, 255, 0.5);
+    border: 1px solid rgba(209, 154, 102, 1);
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    transition: 0.3s;
+    margin-left: auto;
+}
+
+.form button:hover, .back:hover, .button:hover{
+    background-color: rgba(209, 154, 102, 1);
+    color: rgba(240, 248, 255, 1);
+    transition: 0.5s;    
+}
+
+.adres {margin-left: 30px}
+
+.adres p {line-height: 30px}
+
+.adres a{
+    text-decoration: none;
+    color: rgba(240, 248, 255, 0.6);
+    letter-spacing: .1em;
+    line-height: 30px;
+    transition: .5s
+}
+
+.adres a:hover{
+    color: rgba(209, 154, 102, 0.8);
+    transition: 0.3s
+}
+
+.mapa::before{
+    content: url(picture/mapa2.png);
+    padding-right: 14px;
+    
+}
+
+.tel::before{
+    content: url(picture/tel.png);
+    padding-right: 20px;   
+}
+
+.mail::before{
+    
+    content: url(picture/mail.png);
+    padding-right: 20px;     
+}
+
+.work{
+    margin-top: 50px;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+}
+
+.work sup {font-size: 12px}
+
+/* foot */
+
+
+div.stopka ul{    
+    margin-left: 10%;
+    margin-right: 10%; 
+    overflow: hidden;
+    border-left: 2px solid rgba(209, 154, 102, 1);
+    background-color: rgba(43, 42, 42, 0.7) ;
+    box-shadow: 3px 3px 3px 3px rgba(34, 33, 33, 0.678);
+}
+
+div.stopka ul li{
+    /*font-family: 'Eczar', serif;*/
+    display: block;
+    float: left;        
+    color: rgba(209, 154, 102, 1);   
+    list-style: none; 
+    padding: 15px 15px;
+    font-size: 12px;
+    margin-left: 0px;    
+}
+
+div.stopka ul li a{
+    color: rgba(240, 248, 255, 0.5);
+    text-decoration: none;
+    letter-spacing: 0.1em;         
+}
+
+
+div.stopka ul li.right{    
+    float: right;
+    border: none;
+    padding-right: 10px;
+    font-size: 10px;
+    line-height: 20px;
+    color: rgba(240, 248, 255, 0.5);
+    letter-spacing: 0.1em;
+    transition: 0.5s;     
+}
+
+div.stopka ul li a:hover{
+    color: rgba(240, 248, 255, 0.8);
+    transition: 0.3s;
+
+}
+
+
+@media only screen and (max-width: 800px) {
+    .hasla, div.galeria, .benefits, .kontakt, div.stopka ul  {
+      margin: 0;
+      margin-top: 20px;         
+    }
+  }
